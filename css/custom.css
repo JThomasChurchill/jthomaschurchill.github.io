@@ -1,0 +1,65 @@
+---
+---
+
+dt {
+    margin-top: 15px;
+}
+
+.short-view {
+	display: none;
+}
+
+dd.verbose-view {
+	/* display: none; */
+}
+
+/* overrides jekyll clean theme */
+
+.footer a, .well a, .well a:visited {
+  color: #1f949c;
+}
+
+.sidebar.well h1, .links-list .well h1 {
+  color: #26b3bc;
+  font-size: 1.3em;
+}
+
+/* overrides bootstrap inverse theme */
+.navbar-inverse .navbar-header .navbar-brand {
+  color: #26b3bc;
+}
+
+ol.carousel-indicators {
+	background-color: gray;
+	bottom: -35px;
+}
+
+.post-content hr {
+  border-top: 1px solid #999;
+}
+
+/* override syntax highlighting */
+code.language-html .hljs-tag .hljs-attribute {
+  color: #a6e22e;
+}
+code.language-html .hljs-tag .hljs-value {
+  color: #e6db74;
+}
+code.language-html .javascript {
+  opacity: 1;
+}
+code.language-html .javascript .hljs-comment {
+  font-weight: bold;
+}
+
+.well pre code.hljs {
+  background: #2f3029;
+}
+
+.well pre code {
+	border-radius: 3px;
+}
+
+.post-content pre, .well pre {
+	border: 0 none;
+}
