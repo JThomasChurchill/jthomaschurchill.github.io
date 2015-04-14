@@ -58,6 +58,7 @@ code.language-html .javascript .hljs-comment {
 
 .well pre code {
 	border-radius: 3px;
+  min-width: 750px;
 }
 
 .post-content pre, .well pre {
