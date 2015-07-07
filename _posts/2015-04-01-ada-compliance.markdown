@@ -20,13 +20,13 @@ css_class: "tutorial"
 
 The [Americans with Disabilities Act](http://en.wikipedia.org/wiki/Americans_with_Disabilities_Act_of_1990) (ADA) is a federal law that was passed to insure that, for example, public buildings are wheelchair accessible. Websites of course do not have wheelchair ramps, but there are other considerations.
 
-Some visually impaired users have screen readers that will actualy read out loud what is on the web page. These programs will of course not be able to make sense of the page if it is written according to standards. Unfortunately many developers write a page and then load it in a browser to verify that it looks okay without ever actually looking at the resulting HTML source.
+Some visually impaired users have screen readers that will read out loud what is on the web page. These programs will not be able to make sense of the page if it is not written according to standards. Unfortunately many developers write a page and then load it in a browser to verify that it looks okay without ever actually looking at the resulting HTML source.
 
-One good habit is to always run your work through a validator of some kind. For HTML there is the [Markup Validation Service](http://validator.w3.org/) made available by the World Wide Web Consortium (W3C). Some people prefer other validators but the important thing is to do more then simply make a visual check in your test browser.
+One good habit is to always run your work through a validator of some kind. For HTML there is the [Markup Validation Service](http://validator.w3.org/) made available by the World Wide Web Consortium (W3C). Some people prefer other validators but the important thing is to do more then simply make a visual check in your target browsers.
 
-For ADA-specific validation I recommend [Total Validator](https://www.totalvalidator.com/), but there are of course other options.
+For ADA, HTML, and spelling validation I recommend [Total Validator](https://www.totalvalidator.com/). There is another tool called "Compliance Sheriff" (formerly "AccVerify"), but I have found it to be unstable and over-sensitive, giving many false positives even when it *was* working. 
 
-One quick way to check for some basic compliance issues is to install the [Wave Toolbar](https://wave.webaim.org/toolbar/). It will validate things like images having 'alt' text and labels being properly associated with inputs.
+One quick way to check for some basic compliance issues is to install the [Wave Toolbar](https://wave.webaim.org/toolbar/). It will catch the more common mistakes like images not having 'alt' text or labels not being properly associated with inputs.
 
 ---
 
@@ -34,7 +34,7 @@ One quick way to check for some basic compliance issues is to install the [Wave 
 
 There are different kinds of tables in HTML, primarily “layout tables” and “data tables”. 
 
-A layout table is typically invisible and is only used to structure a page, helping you to put things where you want them. This is a very old practice from the early days of the internet and is very strongly discouraged. Pages using tables for layout purposes should be rewritten. A data table is used to display tabular data with rows and columns.
+A layout table is typically invisible and is only used to structure a page, helping you to put things where you want them. This is a very old practice from the early days of the Internet before CSS and is very strongly discouraged. To be quite blunt about it pages using tables for layout purposes should be rewritten. Modern UI frameworks such as Bootstrap or Ionic offer grid layouts that are far more flexible than tables (I am literally begging you to read up on [responsive design](https://en.wikipedia.org/wiki/Responsive_web_design) if you are not already familiar with the term). A data table on the other hand is usually visible and used to display tabular data with rows and columns.
 
 Data tables are ideal for displaying certain kinds of information in a neat and easily readable way, but they must be used correctly in order to be ADA compliant.
 
@@ -81,16 +81,20 @@ The above data table could be represented in HTML like so:
 </table>
 ```
 
-There are three basic ingredients for a compliant data table:
+There are three basic ingredients for an ADA compliant data table:
+
 * Summary
 * Caption
 * Scope
 
-A **summary** is a detailed description of the table, as you might describe it to someone who cannot see the screen. It is not displayed at all so it will have no visible effect. The summary attribute is not supported in HTML 5, so it may be considered optional.
+A **summary** is a detailed description of the table, as you might describe it to someone who cannot see the screen. It is not displayed at all so it will have no visible effect. The summary attribute is not supported in HTML5, so it may be considered optional.
 
-A **caption** is the title of the table, and can be styled many different ways using CSS to meet your page design needs. You may even want to set the caption to display:none if you need to. This may allow you to validate the page as ADA compliant without changing how it looks.
+Although the **summary** element is now obsolete the concept of content that is only meant for screen readers is still important. The <code>sr-only</code> class in Bootstrap 3, for example, is for "screen readers only", and is useful if there are things you want to be available for accessibility reasons but without interfering with the visual layout of the page. Of course <code>display:none</code> might work too, but a class like <code>sr-only</code> is nice because it tells someone new to the project exactly why the element is being hidden.
 
-The **scope** indicates whether a cell acting as a header cell is describing a column or row. The possible values for the scope attribute are col, row, colgroup, and rowgroup.
+A **caption** is the title of the table, and can be styled many different ways using CSS to meet your page design needs. You may want to set the caption to sr-only or display:none if you need to. This may help you keep the page ADA compliant while still conforming to your design specifications.
+
+The **scope** indicates whether a header cell is describing a column or a row. The possible values for the scope attribute are col, row, colgroup, and rowgroup.
+
 Below is an example of a table using <code>scope=”row”</code>.
 
 <table>
@@ -203,7 +207,7 @@ A <code>fieldset</code> can give an overall theme to a group of inputs using the
 
 All images should have alt text. If the image is a functional image the alternative text should describe the purpose of the image or be left empty depending on what will validate.
 
-It is sometimes recommended to set the alt text to an empty string if the image is purely functional and not for display purposes. This may throw errors depending on your compliance validation tool: Compliance Sherriff will throw an error, but TotalValidator will not.
+It is sometimes recommended to set the alt text to an empty string if the image is purely functional and not for display purposes. This may throw errors depending on your compliance validation tool: Compliance Sheriff will throw an error, but TotalValidator will not.
 
 ```html
 <img src="/images/family.png" alt="Picture of a family">
