@@ -16,8 +16,12 @@ css_class: "tutorial"
 
 ---
 
+1. [Create a new repository](#create-a-new-repository)
+1. [Clone a GitHub Repo](#clone-a-github-repo)
 
 ## Set Up
+
+---
 
 ### Interact with your Github Account
 
@@ -48,3 +52,30 @@ In a terminal, cd into the target directory and clone the repo.
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
+---
+
+## Making Changes
+
+---
+
+### Check Status
+
+Checking status tells you:
+
+* Which branch you are on
+* if there are changes that have not been staged 
+* if there are uncommitted changes that have already been staged
+* if there are new files that need to be added
+* probably other stuff too, I don't know, leave me alone
+
+```
+git status
+```
+
+---
+
+### 
+
+---
+
+### 
