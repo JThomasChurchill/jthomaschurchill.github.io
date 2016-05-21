@@ -53,7 +53,7 @@ Copy the URL for the repo from GitHub.
 
 In a terminal, cd into the target directory and clone the repo.
 
-```
+```dos
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
@@ -103,8 +103,8 @@ git add my_new_or_modified_file
 
 You can unstage a file with the reset command.
 
-```
-git reset HEAD <file>
+```dos
+git reset HEAD your_file
 ```
 
 ---
@@ -115,4 +115,10 @@ Once you have "added" (aka "staged") your modified files, you can commit them.
 
 ```
 git commit -m "This is a commit message"
+```
+
+If you are connected to a GitHub account you can push your local changes to GitHub. You will be prompted for you username and password.
+
+```dos
+git push origin master
 ```
