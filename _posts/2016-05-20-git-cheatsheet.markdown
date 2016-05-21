@@ -18,6 +18,11 @@ css_class: "tutorial"
 
 1. [Create a new repository](#create-a-new-repository)
 1. [Clone a GitHub Repo](#clone-a-github-repo)
+1. [Check Status](#check-status)
+1. [Staging And Unstaging Files](#staging-and-unstaging-files)
+1. [Commit Changes](#commit-changes)
+
+---
 
 ## Set Up
 
@@ -54,11 +59,11 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ---
 
-## Making Changes
+## Check Status
 
 ---
 
-### Check Status
+### Check Current Status
 
 Checking status tells you:
 
@@ -74,8 +79,40 @@ git status
 
 ---
 
-### 
+### Checking Differences
+
+```
+git diff -- file_to_check
+```
 
 ---
 
-### 
+## Making Changes
+
+You have to "stage" changes you have made before you can commit them. In this way you can select a subset of all the modified files to be committed with the same commit message.
+
+---
+
+### Staging And Unstaging Files
+
+You stage a file the same way you add a new one by using the "add" command. If you modify a file after staging it, you can still commit it, but only the changes that were staged will be committed. Any changes made after staging will have to also be staged to be committed.
+
+```
+git add my_new_or_modified_file
+```
+
+You can unstage a file with the reset command.
+
+```
+git reset HEAD <file>
+```
+
+---
+
+### Commit Changes
+
+Once you have "added" (aka "staged") your modified files, you can commit them.
+
+```
+git commit -m "This is a commit message"
+```
