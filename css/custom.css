@@ -64,3 +64,12 @@ code.language-html .javascript .hljs-comment {
 .post-content pre, .well pre {
 	border: 0 none;
 }
+
+table {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+td, th {
+    padding: 1px 20px 1px 5px;
+}

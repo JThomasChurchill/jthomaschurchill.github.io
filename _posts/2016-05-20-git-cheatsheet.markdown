@@ -7,7 +7,7 @@ css_class: "tutorial"
 ---
 
 <style>
-  h3 {color: #4a549c;}
+  h3 {color: #4a549c; font-size: 22px;}
   img {box-shadow: 0px 0px 5px darkgray;}
   table {margin-bottom: 15px;}
   table caption {color: #58acfa; font-weight: bold;}
