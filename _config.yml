@@ -42,3 +42,5 @@ kramdown:
 exclude: ['README.md', 'LICENSE']
 
 port: 4005
+
+gems: [jekyll-paginate]
