@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Japanese Grammar"
+date:   2016-10-05 10:00:00
+categories: Git
+css_class: "tutorial"
+---
+
+<style type="text/css">
+	tr {border-bottom: solid 1px #efecec;}
+</style>
+
+## Demonstrative Words
+
+|                   | here                      | there                      | far away                   | question                          |
+|-------------------|---------------------------|----------------------------|----------------------------|-----------------------------------|
+| Root              | **ko-**                   | **so-**                    | **a-**                     | **do-**                           |
+| Pronouns -re      | **kore** (this one)       | **sore** (that one)        | **are** (that one)         | **dore**? (which one?)            |
+| Adjectives -no    | **kono** (this)           | **sono**  (that)           | **ano** (that)             | **dono**? (which?)                |
+| Type -nna         | **konna** (this kind of)  | **sonna**  (that kind of)  | **anna** (that kind of)    | **donna**? (which kind of?)       |
+| Manner &#175;     | **k&#333;** (that way)    | **s&#333;**  (like that)   | **&#257;** (like that)     | **d&#333;**? (in what way?)       |
+| Location -ko      | **koko** (here)           | **soko**  (there)          | **asoko** (over there)     | **doko**? (where?)                |
+| Motion -chira     | **kochira** (hither)      | **sochira**  (thither)     | **achira** (thither)       | **dochira**? (which way?)         |
+| Person adj + hito | **konohito** (this person)| **sonohito**  (that person)| **anohito** (that person)  | **donohito**? (which person?)     |
+
+## Indefinite, Inclusive, Negative
+
+|                   | interogative              | indefinite *-ka*             | negative *-mo*                   | distributive *-de mo*               |
+|-------------------|---------------------------|------------------------------|----------------------------------|-------------------------------------|
+| Pronouns (people) | **dare**? who?            | **dareka** someone           | **dare mo \*** no one            | **dare de mo** anyone, everyone     |
+| Pronouns (formal) | **donata**? who?          | **donataka** someone         | **donata mo \*** no one          | **donata de mo** anyone, everyone   |
+| Pronouns (things) | **dore**? which?\*        | **dore ka** something        | **dore mo \*** nothing           | **dore de mo** either one           |
+| How               | **d&#333;**? how?         | **d&#333; ka** somehow       | **d&#333; mo \*** in no way      | **d&#333; de mo** anyhow            |
+| Where             | **doko ka**? where?       | **doko ka** somewhere        | **doko mo \*** nowhere           | **doko de mo** anywhere, everywhere |
+| What              | **nani, nan**? what?      | **nani ka** something        | **nani mo \*** nothing           | **nan de mo** anything, everything  |
+| Direction or<br>Preference| **dochira**?<br>where?, which?\*\* | **dochira ka**<br>somewhere, one of which | **dochira mo**<br>nowhere, neither | **dochira de mo**<br>anywhere, either of which |
+
+***\* Note:*** 'dore' is a choice between 2 options, and 'dochira' is a choice between 3 or more
+
+***\*\* Note:*** negative '-mo' words must be used with a negative verb
